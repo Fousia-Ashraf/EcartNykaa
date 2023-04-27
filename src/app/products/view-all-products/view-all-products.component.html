@@ -1,0 +1,74 @@
+  <div class="container">
+    <div class="container d-flex mb-5">
+            <div style="border:none ;border-radius: 0px;;" class="p-2 me-2 border col-3">
+                <a (click)="filter('')">
+
+                    <img  style="border:0px  #f30669f6 solid;border-radius: 0px;height: 150px;width: 100%;" src="https://i.postimg.cc/BnzBLYD2/all.jpg" alt="">
+                    <h4 class="pt-3 text-center">view All</h4>
+                </a >
+
+            </div>
+            <div style="border:none ;border-radius: 0px;" class="p-3 me-2 border col-3">
+                <a (click)="filter(1)" >
+                    <img   style="border:0px  #f30669f6 solid;border-radius: 0px;height: 150px;width: 100%;" src="https://i.postimg.cc/gjrVMdTd/IIPONLY.jpg" alt="">
+                    <h4 class="pt-2 text-center">Lipsticks</h4>
+                </a>
+    
+            </div>
+            <div style="border:none ;border-radius: 0px;" class="p-3 me-2 border col-3">
+               <a (click)="filter(2)">
+                    <img   style="border:0px  #f30669f6 solid;border-radius: 0px;height: 150px;width: 100%;" src="https://i.postimg.cc/wTNpPNJy/eyeline.jpg" alt="">
+                    <h4 class="pt-2 text-center">Eyeliners</h4>
+               </a >
+    
+            </div>
+            <div style="border:none ;border-radius: 0px;" class="p-3 border col-3">
+                <a (click)="filter(3)">
+                    <img   style="border:0px  #f30669f6 solid;border-radius: 0px;height: 150px;width: 100%;"src="https://i.postimg.cc/gJMzzPkx/eyesha.jpg" alt="">
+                    <h4 class="pt-2 text-center">Eyeshadow Palette</h4>
+                </a>
+    
+            </div>
+        
+    </div>
+    <hr style="color: #f30669f6;">
+  </div>
+  
+  
+  <!-- Section-->
+   <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterProducts|filter:searchkey:'productName'" class="col mb-5">
+                <div id="d1" class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{i.productImage}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 style="color: #f30669f6;" class="fw-bolder">{{i.productName}}</h5>
+                            <!-- Product price-->
+                            {{i.price}}
+                        </div>
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <!-- <h5 style="color: #f30669f6;" class="fw-bolder">{{i.productName}}</h5> -->
+                            <!-- Product price-->
+                           Rating:{{i.rating}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div   class="text-center "><a id="viewBut"  class="btn  mt-auto " href="products/viewProduct/{{i.id}}">View options</a></div>
+                    </div>
+                </div>
+            </div>
+            
+                    <!-- Product actions-->
+                    <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div> -->
+                </div>
+            </div>
+</section>

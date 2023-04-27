@@ -1,0 +1,21 @@
+#viewBut{
+    color: #f30669f6 ;
+    border: .5px solid #f30669f6;
+}
+#viewBut:hover{
+   color: white;
+    background-color: #e63d84f6;
+    border: .5px solid white;
+    font-size: 18px;
+
+}
+#d1{
+    transition: .5s ease-in-out;
+
+}
+
+#d1:hover{
+    /* box-shadow: 20px 20px 10px grey; */
+    box-shadow: 5px 5px 9px 7px grey;
+    transform: scale(1.0);
+}

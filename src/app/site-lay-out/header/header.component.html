@@ -1,0 +1,39 @@
+
+    <!-- Navigation-->
+    <nav style="background-color: rgb(241, 213, 213);" class="navbar navbar-expand-lg navbar-light">
+        <div class="container px-4 px-lg-5">
+            <a  class="navbar-brand" href="products"><i><STRONG><img style="height: 40px;width: 75px;" src="https://i.postimg.cc/jjm0tkPL/iconnyka.png" alt=""> <span style="color: rgb(240, 39, 133);">MyNYKAA</span ></STRONG></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products/addProduct">Add new product</a></li>
+                   
+                </ul>
+                <form class="d-flex me-5" role="search">
+                    <input [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  style="border: 1px #f30d9b solid ;color:#f30d9b ;" class="btn btn-outline-light mr-2" type="submit">Search</button>
+                  </form>
+                <form class="d-flex">
+                    <button style="border: 1px #f30d9b solid ;" class="btn btn-outline-light" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        <span style="color: #f30d9b;">Cart</span >
+                        <span style="background-color:#f30d9b;" class="badge text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header style="" class=" py-1">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder"><i><SPAN style="color:#f30669f6 ;">My</SPAN></i><img src="https://i.postimg.cc/7LqGYFZK/logo.png" alt=""></h1>
+                <p style="color: #f30669f6;font-family: 'Poppins', sans-serif;
+                font-family: 'Roboto Slab', serif;
+                " class="lead fw-normal text-50 mt-4 mb-0">Get 10% Off On Your First Order</p>
+            </div>
+            <hr style="color: #f30d9b;">
+        </div>
+    </header>
+   

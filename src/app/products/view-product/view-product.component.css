@@ -1,0 +1,11 @@
+#item:hover{
+    background-color:#f30669f6 ;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+}
+#item{
+    background-color: white;
+    border: 1px solid #f30669f6; 
+    color: #f30669f6;
+}

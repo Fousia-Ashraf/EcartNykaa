@@ -1,0 +1,23 @@
+h1{
+    color:#f30669f6 ;
+}
+button{
+    width: 200px;
+    transition: .2s ease-in;
+    background-color: white;
+    border:1px solid #f30669f6;
+    color:#f30669f6
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #f30669f6;
+    
+    color: white;
+}
+form{
+transition: .2s ease-in;
+}
+form:hover{
+    transform: scale(1.01);
+    background-color: #e989b1f6;
+}
